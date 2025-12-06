@@ -1,2 +1,0 @@
-# Shadhin-Website
-personal website

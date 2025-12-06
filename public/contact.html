@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Contact — Md Sadikur Rahman Shadhin</title><link rel="stylesheet" href="css/style.css"/></head>
+<body><div class="container"><nav>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <button class="mobile-nav-toggle" aria-label="Menu" onclick="toggleMobileNav()">☰</button>
+    </div><a class="brand" href="index.html"><div class="logo">S</div><div class="brand-text"><strong>Md Sadikur Rahman Shadhin</strong><span>Premium Portfolio</span></div></a><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="social.html">Social</a><a href="contact.html">Contact</a></div></nav>
+<section class="section"><div class="card"><h2>Contact Me</h2>
+<form id="contactForm" onsubmit="submitContact(event)">
+<input id="name" placeholder="Your name" required style="width:100%;padding:10px;border-radius:8px;margin-bottom:8px"><br>
+<input id="email" type="email" placeholder="Your email" required style="width:100%;padding:10px;border-radius:8px;margin-bottom:8px"><br>
+<textarea id="message" placeholder="Your message" required style="width:100%;padding:10px;border-radius:8px;margin-bottom:8px"></textarea><br>
+<button type="submit" class="btn">Send Message</button>
+<p id="formMsg" style="margin-top:10px;color:var(--muted)"></p>
+</form></div></section>
+<footer style="text-align:center;padding:28px;color:var(--muted)">© <span id="year"></span> Md Sadikur Rahman Shadhin</footer></div><script src="js/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="contact.js"></script>
+</body></html>
